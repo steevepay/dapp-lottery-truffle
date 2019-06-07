@@ -1,21 +1,29 @@
 {
-  "name": "lottery-dash",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "web3": "^1.0.0-beta.35"
+  "name": "lottery-truffle",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "truffle test ./test/*.test.js",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:steevepay_projects/solidity/lottery-truffle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.0.0-beta.35",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "truffle-hdwallet-provider": "0.0.3"
   },
   "browserslist": {
     "production": [
