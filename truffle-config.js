@@ -23,7 +23,6 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 
 const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
-const mnemonic_dev = 'pistol rail bargain common tilt juice minute air human strike peanut smart';
 
 module.exports = {
   /**
@@ -70,7 +69,7 @@ module.exports = {
     //   skipDryRun: false     // Skip dry run before migrations? (default: false for public nets )
     // },
     rinkeby: {
-      provider: () => new HDWalletProvider(mnemonic_dev, `https://rinkeby.infura.io/v3/aa7a461490244b65a54e2f67b959fa8a`),
+      provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/aa7a461490244b65a54e2f67b959fa8a`),
       network_id: 4,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 0,    // # of confs to wait between deployments. (default: 0)

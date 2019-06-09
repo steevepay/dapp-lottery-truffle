@@ -1,8 +1,5 @@
 import web3 from "./web3"
-// import Lottery from "../build/contracts/Lottery.json"
 
-
-const address = '0x17993845CC51412cf46502cecC3EFA4ABB8308B9';
 const abi = [
   {
     "constant": true,
@@ -76,6 +73,5 @@ const abi = [
     "type": "function"
   }
 ];
-// const abi = JSON.parse()
 
-export default new web3.eth.Contract(abi, address);
+export default new web3.eth.Contract(abi, process.env.REACT_APP_FACTORY_CONTRACT_ADDRESS);
