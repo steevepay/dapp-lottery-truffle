@@ -27,7 +27,7 @@ Then compile the contracts:
 $ truffle compile
 ```
 Then deploy you contract on the ethereum test network of your choice (configs on the 'truffle-config.js'):
-```sheel
+```shell
 $ truffle migrate --network=rinkeby
 ```
 Finallyse your '.env' file by adding your deployed contract address:
@@ -36,8 +36,8 @@ REACT_APP_FACTORY_CONTRACT_ADDRESS="0x8..."
 // or you can use the following deployed contract: 0x8574BcbB0a0a2dF8172aBeF30e22CD033a8CCfDA
 ```
 Runs the app:
-```
-npm run start
+```shell
+$ npm run start
 ```
 
 Congratulation, your decentralized Lottery is running. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. 🎉
