@@ -1,35 +1,28 @@
 import web3 from "./web3"
 
-const abi = [
-  {
+const abi = [{
     "constant": true,
     "inputs": [],
     "name": "manager",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "stateMutability": "view",
     "type": "function"
   },
   {
     "constant": true,
-    "inputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "inputs": [{
+      "name": "",
+      "type": "uint256"
+    }],
     "name": "players",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "stateMutability": "view",
     "type": "function"
@@ -62,12 +55,10 @@ const abi = [
     "constant": true,
     "inputs": [],
     "name": "getPlayers",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address[]"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address[]"
+    }],
     "payable": false,
     "stateMutability": "view",
     "type": "function"
